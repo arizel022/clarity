@@ -1,0 +1,13 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+.vs
+
+node_modules/
+scss
+app
+docs/scss
+gulpfile.js
+package.json
+package-lock.json
+loc
