@@ -4,7 +4,6 @@
 .vs
 
 node_modules/
-scss
 app
 docs/scss
 gulpfile.js
