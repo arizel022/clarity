@@ -1,0 +1,105 @@
+.header {
+    background-color: $db;
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    &__logo {
+        width: 162px;
+        height: 24px;
+        margin-left: 200px;
+    }
+
+    &__social {
+        margin-left: auto;
+    }
+}
+
+
+.menu {
+    margin-right: auto;
+    border-right: 1px solid $bord;
+    transition: 0.2s;
+
+    &:hover {
+        border-right: 1px solid $blue;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__list {
+        position: absolute;
+        display: block;
+        top: 28px;
+        left: -35px;
+        z-index: 5;
+        width: 300px;
+        box-shadow: 8px 8px 8px #000;
+    }
+    &__item {
+        width: 100%;
+        background-color: $gr;
+        text-align: center;
+        padding: 8px;
+        border-bottom: 1px solid $bord;
+        &:hover {
+            border-bottom: 1px solid #0027a5;
+        }
+    }
+    &__link {
+        color: $db;
+        display: block;
+        padding: 6px 0;
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "Nunito-Bold";
+        text-transform: uppercase;
+        &:hover {
+            color: #0027a5;
+        }
+    }
+    &__trigger {
+        position: relative;
+        &:before {
+            position: absolute;
+            font-size: 28px;
+            right: 10px;
+            top: 10px;
+            transform: rotate(90deg);
+            transition: 0.5s;
+        }
+    }
+    &__list2 {
+        display: none;
+        width: 400px;
+        height: 100%;
+        box-shadow: 8px 8px 8px #000;
+        margin-left: 5px;
+        &__wrapper {
+            display: flex;
+            justify-content: start;
+            position: absolute;
+            top: 0;
+            left: 300px;
+            z-index: 5;
+        }
+        .menu__item {
+            text-align: left;
+        }
+    }
+    &__trigger:hover {
+        &:before {
+            color: $blue;
+            transform: rotate(180deg);
+            top: 5px;
+            right: 7px;
+        }
+        .menu__list2 {
+            display: block;
+        }
+    }
+}

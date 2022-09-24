@@ -1,0 +1,467 @@
+@import 'node_modules/slick-carousel/slick/slick.scss';
+$db: #2a3539;
+$gr: #dfdfdf;
+$bord: #575757; //для бордеров иконок
+$blue: #3e88c5;
+
+
+body {
+    font-family: "Nunito";
+    background-color: $gr;
+}
+
+.container {
+    max-width: 1600px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+.content { //-------------------------для страницы service.html
+    margin-top: 50px;
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    content {
+        width: 66%;
+        .article__inner {
+            margin-top: 0;
+        }
+    }
+    aside {
+        width: 33%;
+        margin-left: 40px;
+    }
+    &__slogan {
+        font-size: 36px;
+        color: #000;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-bottom: 120px;
+    }
+    &__banner {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 490px;
+    }
+}
+.serv-arrow {
+    position: absolute;
+    top: -95px;
+    width: 480px;
+    height: 55px;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.serv-arrow:after,
+.serv-arrow:before {
+    color: $gr;
+    font-size: 16px;
+}
+
+.serv-arrow.serv-arrow-prew {
+    left: 0;
+    &:after {
+        content: 'предыдущая услуга';
+        font-family: "Play-Regular";
+        text-transform: uppercase;
+    }
+    &:before {
+        padding-right: 25px;
+    }
+}
+.serv-arrow.serv-arrow-next {
+    right: 0;
+    &:before {
+        content: 'следующая услуга';
+        font-family: "Play-Regular";
+        text-transform: uppercase;
+    }
+    &:after {
+        content: "\f178";
+        padding-left: 25px;
+    }
+}
+
+.logo {
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../images/logo.png);
+}
+.social {
+    display: flex;
+    justify-content: end;
+    &__item {
+        background-color: transparent;
+        &:before {
+            font-size: 18px;
+        }
+        &:hover + .social__item {
+            border-left: 1px solid $blue;
+        }
+    }
+    & :nth-child(5) {//========================ПРАВЫЙ бордер ПЯТОГО
+        border-right: 1px solid $bord;
+        background-color: transparent;
+        transition: .5s;
+        &:hover {
+            border-right: 1px solid $blue;
+        }
+    }
+}
+.global {
+    &__icon { 
+        border-left: 1px solid $bord;   //=====ВСЕ ЛЕВЫЕ БОРДЕРЫ
+        width: 55px;
+        height: 55px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .5s;
+        &:before {
+            color: #fff;
+            font-size: 18px;
+            transition: .5s;
+        }
+        &:hover {
+            border-left: 1px solid $blue;
+            &:before {
+                color: $blue;
+            }
+        }
+    }
+}
+.paper {
+    &__wrapper {
+        position: relative;
+    }
+    margin-bottom: 50px;
+    &__lid {
+        color: #999;
+        text-transform: uppercase;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-bottom: 40px;
+    }
+    &__description {
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-weight: 700;
+        text-align: center;
+        line-height: 28px;
+    }
+    &__text {
+        text-align: justify;
+        color: #464646;
+        font-size: 16px;
+        line-height: 28px;
+        margin-bottom: 40px;
+    }
+
+    &__item {
+        color: #464646;
+        font-size: 16px;
+        line-height: 28px;
+        list-style-type: disc;
+        list-style-position: inside;
+    }
+    &__bottom {
+        border-top: 2px solid $gr;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Play-Regular";
+        font-size: 21px;
+        color: #999999;
+    }
+    &__price-icon {
+        margin-left: 55px;
+        &:before {
+            font-size: 24px;
+            color: $blue;
+        }
+    }
+    &__price {
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+    &__stars {
+        padding: 25px 0;
+        margin-left: auto;
+        margin-right: 20px;
+    } 
+    &__rate {
+        margin-right: 55px;
+    }
+}
+.sidebar {
+    background-color: #fff;
+    padding: 35px;
+    &__img {
+        background-image: url(../images/sidebar.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 800px;
+        margin-bottom: 80px;
+    }
+}
+.categories {
+    margin-bottom: 60px;
+    &__title {
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 10px;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $gr;
+    }
+    &__list-item {
+        display: flex;
+        justify-content: space-between;
+        text-transform: uppercase;
+        padding: 25px 0;
+        border-bottom: 1px solid $gr;
+        &:hover {
+            border-bottom: 1px solid $blue;
+            .categories__list-text,
+            .categories__list-count {
+                color: $blue;
+            }
+        }
+    }
+}
+.partners {
+    margin-bottom: 80px;
+    &__title {
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        font-size: 24px;
+        font-weight: 900;
+        padding-bottom: 25px;
+        border-bottom: 1px solid $gr;
+        margin-bottom: 20px;
+    }
+    &__item {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        border-bottom: 1px solid $gr;
+        padding: 20px 0;
+        &:hover {
+            .partners__link {
+                color: $blue;
+            }
+        }
+    }
+    &__img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/partner.jpg);
+        min-width: 120px;
+        width: 120px;
+        height: 93px;
+        margin-right: 25px;
+    }
+    &__name {
+        margin-bottom: 18px;
+    }
+    &__name,
+    &__link {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 24px;
+        text-transform: uppercase;
+    }
+    &__link {
+        color: #7e7d7d;
+    }
+
+}
+.reclame {
+    margin-bottom: 50px;
+    &__img {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-image: url(../images/reclame.jpg);
+        width: 416px;
+        height: 347px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?4zcvmq');
+    src:  url('../fonts/icomoon.eot?4zcvmq#iefix') format('embedded-opentype'),
+      url('../fonts/icomoon.ttf?4zcvmq') format('truetype'),
+      url('../fonts/icomoon.woff?4zcvmq') format('woff'),
+      url('../fonts/icomoon.svg?4zcvmq#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    // speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-credit-card:before {
+    content: "\f09d";
+  }
+  .icon-bars:before {
+    content: "\f0c9";
+  }
+  .icon-navicon:before {
+    content: "\f0c9";
+  }
+  .icon-reorder:before {
+    content: "\f0c9";
+  }
+  .icon-money:before {
+    content: "\f0d6";
+  }
+  .icon-long-arrow-down:before {
+    content: "\f175";
+  }
+  .icon-long-arrow-up:before {
+    content: "\f176";
+  }
+  .icon-long-arrow-left:before {
+    content: "\f177";
+  }
+  .icon-long-arrow-right:before {
+    content: "\f178";
+  }
+  .icon-cc-visa:before {
+    content: "\f1f0";
+  }
+  .icon-cc-mastercard:before {
+    content: "\f1f1";
+  }
+  .icon-gmail:before {
+    content: "\e900";
+  }
+  .icon-skype:before {
+    content: "\e901";
+  }
+  .icon-telegram:before {
+    content: "\e902";
+  }
+  .icon-viber:before {
+    content: "\e903";
+  }
+  .icon-home3:before {
+    content: "\e904";
+  }
+  .icon-phone:before {
+    content: "\e942";
+  }
+  .icon-envelop:before {
+    content: "\e945";
+  }
+  .icon-location2:before {
+    content: "\e948";
+  }
+  .icon-bubbles3:before {
+    content: "\e96f";
+  }
+  .icon-user:before {
+    content: "\e971";
+  }
+  .icon-users:before {
+    content: "\e972";
+  }
+  .icon-spinner9:before {
+    content: "\e982";
+  }
+  .icon-hammer2:before {
+    content: "\e9a8";
+  }
+  .icon-briefcase:before {
+    content: "\e9ae";
+  }
+  .icon-shield:before {
+    content: "\e9b4";
+  }
+  .icon-power:before {
+    content: "\e9b5";
+  }
+  .icon-menu:before {
+    content: "\e9bd";
+  }
+  .icon-menu3:before {
+    content: "\e9bf";
+  }
+  .icon-menu4:before {
+    content: "\e9c0";
+  }
+  .icon-earth:before {
+    content: "\e9ca";
+  }
+  .icon-arrow-up2:before {
+    content: "\ea3a";
+  }
+  .icon-arrow-right2:before {
+    content: "\ea3c";
+  }
+  .icon-arrow-down2:before {
+    content: "\ea3e";
+  }
+  .icon-arrow-left2:before {
+    content: "\ea40";
+  }
+  .icon-ctrl:before {
+    content: "\ea50";
+  }
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+  
