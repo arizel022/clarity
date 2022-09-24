@@ -17,7 +17,8 @@ $(document).ready(function () {
   });
 
   
-  $('.header__menu').on('click', function () {
+  $('.menu__button').on('click', function () {
+    $(this).toggleClass('active');
     $('.menu__list').slideToggle();
   });
 

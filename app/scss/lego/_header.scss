@@ -24,61 +24,167 @@
     margin-right: auto;
     border-right: 1px solid $bord;
     transition: 0.2s;
+    position: relative;
 
-    &:hover {
-        border-right: 1px solid $blue;
+    &__button {
+        width: 44px;
+        height: 44px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid $bord;
+        border-right: 1px solid $bord;
+        transition: border-color 0.3s;
+
+        &:hover {
+            border-color: $blue;
+
+            .menu__line {
+                background-color: $blue;
+            }
+        }
+
+        &:active, &.active {
+            .menu__line {
+                width: 0;
+
+                &::after {
+                    transform: rotate(45deg);
+                    left: -11px;
+                    bottom: 0;
+                } 
+                
+                &::before {
+                    transform: rotate(-45deg);
+                    left: -11px;
+                    top: 0;
+                }
+            }
+        }
     }
-    &__inner {
+
+    &__line {
+        width: 25px;
+        height: 1px;
+        background-color: #fff;
         position: relative;
+        transition: width 1s;
+
+        &::after, &::before {
+            content: '';
+            width: 25px;
+            height: 1px;
+            background-color: inherit;
+            position: absolute;
+            left: 0;
+        }
+
+        &::after {
+            bottom: -8px;
+            transition: transform 0.6s, left 0.2s, bottom 0.2s;
+        } 
+        
+        &::before {
+            top: -8px;
+            transition: transform 0.6s, left 0.2s, top 0.2s;
+        }
     }
+
     &__list {
         position: absolute;
         display: block;
-        top: 28px;
-        left: -35px;
+        top: 50px;
+        left: 0px;
         z-index: 5;
         width: 300px;
         box-shadow: 8px 8px 8px #000;
-    }
-    &__item {
-        width: 100%;
         background-color: $gr;
-        text-align: center;
-        padding: 8px;
-        border-bottom: 1px solid $bord;
-        &:hover {
-            border-bottom: 1px solid #0027a5;
-        }
     }
+
+    &__item {
+        // width: 100%;
+        text-align: left;
+        position: relative;
+    }
+
     &__link {
         color: $db;
-        display: block;
-        padding: 6px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 8px;
         font-size: 14px;
         line-height: 16px;
-        font-family: "Nunito-Bold";
+        font-weight: 700;
         text-transform: uppercase;
+        border-bottom: 1px solid $bord;
+
+        &--arrow {
+            &:after {
+                content: '';
+                display: block;
+                width: 20px;
+                height: 20px;
+                background-image: url('../images/icon/chevron-thin-right.svg');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                transition: transform 0.6s;
+            }
+        }
+
         &:hover {
             color: #0027a5;
+            border-bottom: 1px solid #0027a5;
+
+            &:after {
+                transform: rotate(90deg);
+            }
+
+            & + .menu__list2__wrapper .menu__list2 {
+                display: block;
+            }
+
+            & + .menu__sublist {
+                display: flex;
+            }
         }
     }
-    &__trigger {
-        position: relative;
-        &:before {
-            position: absolute;
-            font-size: 28px;
-            right: 10px;
-            top: 10px;
-            transform: rotate(90deg);
-            transition: 0.5s;
+
+    &__sublist {
+        display: none;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 300px;
+        width: 300%;
+        z-index: 5;
+        max-height: 60vh;
+        box-shadow: 8px 8px 8px #000;
+        margin-left: 5px;
+        background-color: $gr;
+
+        .menu__item {
+            width: 290px;
+        }
+
+        .menu__link {
+            border-color: transparent;
+            padding: 10px 8px;
+            font-size: 12px;
         }
     }
+
     &__list2 {
         display: none;
         width: 400px;
         height: 100%;
         box-shadow: 8px 8px 8px #000;
         margin-left: 5px;
+        background-color: $gr;
+
         &__wrapper {
             display: flex;
             justify-content: start;
@@ -87,19 +193,6 @@
             left: 300px;
             z-index: 5;
         }
-        .menu__item {
-            text-align: left;
-        }
     }
-    &__trigger:hover {
-        &:before {
-            color: $blue;
-            transform: rotate(180deg);
-            top: 5px;
-            right: 7px;
-        }
-        .menu__list2 {
-            display: block;
-        }
-    }
+
 }
