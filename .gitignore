@@ -6,7 +6,10 @@
 npm-debug.*
 
 package-lock.json
+package.json
+gulpfile.js
 dist/
 node_modules/
 loc/
-project-start.txt
+docs/html
+docs/scss
