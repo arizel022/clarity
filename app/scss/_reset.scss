@@ -31,6 +31,8 @@ ol, ul {
 a {
     display: inline-block;
     text-decoration: none;
+	color: inherit;
+	outline: transparent;
 }
 img {
 	display: block;
@@ -39,10 +41,12 @@ img {
 input, button, textarea, select {
 	font-family: inherit;
 	border: none;
+	outline: transparent;
 }
 button {
 	padding: 0;
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+
 }

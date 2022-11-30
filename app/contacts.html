@@ -2,19 +2,19 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans&family=Play&display=swap"
-    rel="stylesheet">
-  <title>Clarity - шаблон бизнес-сайта</title>
-  <link rel="stylesheet" href="css/style.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans&family=Play&display=swap"
+        rel="stylesheet">
+    <title>Clarity - шаблон бизнес-сайта</title>
+    <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
-  <header class="header">
+    <header class="header">
         <div class="container header__container">
 
                 <nav class="menu ">
@@ -491,275 +491,136 @@
                 </ul>
         </div>
 </header>
-  <main class="page">
+    <main class="page">
+        <div class="page-wrapper">
+            <div class="container page-wrapper__container">
+                <section class="contact-page">
 
-    <h1 class="sr-only">Clarity - юридические услуги в Украине</h1>
+                    <address class="contact-page__address">
 
-    <section class="hero">
-    <h2 class="sr-only">Популярные юридические услуги</h2>
-    <div class="container">
+                        <div class="contact-page__map"></div>
 
-        <div class="hero__inner">
+                        <div class="contact-page__inner">
+                            <h1 class="contact-page__title">Контактная информация</h1>
+                            <p class="contact-page__text">
+                                Остались вопросы? Напишите или позвоните нам, и мы обязательно ответим.
+                            </p>
+                            <ul class="contact-page__list">
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="tel:+380445555555">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 555 55 55
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="tel:+380676666666">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 067 666 66 66
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        г. Киев, ул. Сечевых стрельцов, д. 15, оф. 214. Пн-Пт с 9:00 до 18:00.
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="mailto:info@clarity.com">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        info@clarity.com
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="clarity.com">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        clarity.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
 
-            <div class="hero__item">
-                <div class="hero__content hero__content--1">
-                    <p class="hero__text">
-                        Юридический консалтинг
-                    </p>
-                    <h2 class="hero__subtitle">
-                        Юридические услуги для юридических лиц и нерезидентов
-                    </h2>
-                </div>
+                    </address>
+
+                    <form class="form" action="">
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваше имя</span>
+                            <input class="form__input" type="text" name="name" placeholder="Тарас" required>
+                        </label>
+                        <label class="form__label">
+                            <span class="sr-only">Ваша почта</span>
+                            <input class="form__input" type="email" name="email" placeholder="you@email.com" required>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваш вебсайт</span>
+                            <input class="form__input" type="text" name="site" placeholder="you.com" required>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваше сообщение</span>
+                            <textarea class="form__input form__input--area" name="message" placeholder="Введите текст сообщения тут..."
+                                required></textarea>
+                        </label>
+
+                        <button class="form__btn" type="submit">Отправить сообщение</button>
+                    </form>
+
+                </section>
+                <aside class="sidebar sidebar--small">
+
+                    <div class="sidebar__statistic">
+                        <h2 class="sidebar__title">
+                            Статистика
+                        </h2>
+                        <ul class="sidebar__list sidebar__list--small-pict">
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">получить лицензию</p>
+                                <span class="sidebar__count">24</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">зарегистрировать фирму</p>
+                                <span class="sidebar__count">5</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">купить фирму</p>
+                                <span class="sidebar__count">4</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">услуги нерезидентам</p>
+                                <span class="sidebar__count">65</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">неприбыльные организации</p>
+                                <span class="sidebar__count">5</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">разрешение на строительство</p>
+                                <span class="sidebar__count">13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
             </div>
-
-            <div class="hero__item">
-                <div class="hero__content hero__content--2">
-                    <p class="hero__text">
-                        Получение лицензий
-                    </p>
-                    <h2 class="hero__subtitle">
-                        Лицензия для любого вида деятельности
-                    </h2>
-                </div>
-            </div>
-            <div class="hero__item">
-                <div class="hero__content hero__content--3">
-                    <p class="hero__text">
-                        От 18 000 грн
-                    </p>
-                    <h2 class="hero__subtitle">
-                        Покупка готовых компаний и открытие представительств в Украине
-                    </h2>
-                </div>
-            </div>
-
         </div>
 
-    </div>
-</section>
 
-    <section class="article">
-      <div class="container article__container">
 
-        <div class="article__group">
-          <h2 class="article__title">
-            Мы работаем на рынке юридических услуг Украины с 2006 года.
-          </h2>
-          <p class="article__text">
-            Работая в Киеве, мы отчетливо представляем уровень конкуренции в нашей сфере. Поэтому отдаем себе
-            отчет в том, насколько качественными и эффективными
-            должны быть наши услуги. Мы ориентируемся только на долгосрочную эффективность.
-          </p>
-          <p class="article__text">
-            Каждый клиент компании CLARITY обслуживается как единственный, а каждая услуга предоставляется с
-            самым высоким уровнем качества.
-          </p>
-        </div>
-        <div class="article__group">
-          <h3 class="article__title">
-            Мы предлагаем:
-          </h3>
-          <ul class="article__list">
-            <li class="article__item">юридические консультации</li>
-            <li class="article__item">помощь в получении медицинских и других лицензий</li>
-            <li class="article__item">регистрации благотворительных фондов, общественных организаций в Киеве,
-              ООО и т.д. </li>
-          </ul>
 
-        </div>
-        <div class="article__group">
-          <h3 class="article__title">
-            Самые популярные юридические услуги нашей компании это:
-          </h3>
-          <ul class="article__list">
-            <li class="article__item">вывод на украинский рынок иностранных компаний (регистрация ООО,
-              регистрация представительства иностранной компании в Украине,
-              разрешение на трудоустройство иностранца, оформление временного вида на жительство)</li>
-            <li class="article__item">обслуживание неприбыльных организаций (регистрация благотворительного
-              фонда, регистрация общественной организации</li>
-            <li class="article__item">регистрация печатного издания, регистрация информационного агентства,
-              внесение изменений в устав благотворительного фонда</li>
-          </ul>
-        </div>
-        <div class="article__group">
-          <h3 class="article__title">
-            Юридические услуги в сфере лицензирования:
-          </h3>
-          <ul class="article__list">
-            <li class="article__item">медицинская лицензия</li>
-            <li class="article__item">лицензия на аптеку</li>
-            <li class="article__item">лицензия на охрану и др.</li>
-          </ul>
-          <p class="article__text">
-            Если ждать оформления лицензии слишком долго, Вы можете приобрести у нас готовую фирму с лицензией,
-            благотворительный фонд или общественную организацию.
-          </p>
-        </div>
 
-      </div>
-    </section>
 
-    <section class="service">
-      <h2 class="sr-only">Услуги юридической компании Clarity</h2>
-      <div class="container">
-        <ul class="service__grid">
-          <li class="service__item service__item--6">
-            <article class="service-card">
-              <div class="service-card__inner">
-                <span class="service-card__icon"></span>
-                <h3 class="service-card__title">юридическая консультация</h3>
-
-                <p class="service-card__text">
-                  Юридическая консультация - это основанный на специфических знаниях и опыте вывод юриста
-                  по тому или иному юридическому вопросу или ряду вопросов.
-                </p>
-
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card">
-
-              <img src="./images/service/license.jpg" alt="" class="service-card__img" height="240px">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">получить лицензию</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--6">
-            <article class="service-card">
-              <div class="service-card__inner">
-                <span class="service-card__icon"></span>
-                <h3 class="service-card__title">регистрация фирмы</h3>
-                <p class="service-card__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have
-                  greaetur adipisicin.
-                </p>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card service-card--dark">
-              <img src="./images/service/fiz.jpg" alt="" class="service-card__img" height="240px">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">физическим лицам</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card">
-
-              <img src="./images/service/ur.jpg" alt="" class="service-card__img" height="240px">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">юридическим лицам</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7 ">
-
-            <article class="service-card">
-
-              <img src="./images/service/kupfirm.jpg" alt="" class="service-card__img" height="240px">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">купить фирму</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--6">
-            <article class="service-card service-card--dark">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">Остались вопросы?</h3>
-                <a class="service-card__link" href="#">Напишите нам</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card">
-              <div class="service-card__inner">
-                <span class="service-card__icon"></span>
-                <h3 class="service-card__title">Юридические практики</h3>
-                <p class="service-card__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have
-                  greaetur adipisicin, sed does eiue have great work pisicin, вакевп вап?sdfgd raet4sdfsadfsd sd. Lorem
-                  ipsum doloirs t,tetur acin.
-                </p>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card">
-              <div class="service-card__inner">
-                <span class="service-card__icon"></span>
-                <h3 class="service-card__title">Услуги нерезидентам</h3>
-                <p class="service-card__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have tur adipisicin, sed does tur adipisicin, sed does tur adipisicin, sed does
-                  greaetur adipisicin, sed does eiue have great work.
-                  orem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehamp
-                </p>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--7">
-            <article class="service-card">
-
-              <img src="./images/service/sopr.jpg" alt="" class="service-card__img" height="240px">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">Сопровождение иностранного бизнеса</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--2">
-            <article class="service-card service-card--dark">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">Наши партнеры</h3>
-                <a class="service-card__partner-link" href="#">benedict.com</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--6">
-            <article class="service-card">
-              <div class="service-card__inner">
-                <span class="service-card__icon"></span>
-                <h3 class="service-card__title">регистрация неприбыльных организаций</h3>
-
-                <p class="service-card__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dolorem. Incidunt ex quae, distinctio hic, voentium aut? Impedit quas repellat sapiente possimus.
-                </p>
-
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-          <li class="service__item service__item--5">
-            <article class="service-card service-card--dark">
-              <div class="service-card__inner">
-                <span class="service-card__icon service-card__icon--ham"></span>
-                <h3 class="service-card__title">полезная информация</h3>
-                <a class="service-card__link" href="#">Подробно</a>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-    </section>
-  </main>
-  <footer class="footer">
+    </main>
+    <footer class="footer">
     <div class="container footer__container">
 
 
@@ -912,7 +773,7 @@
     </div>
 </footer>
 
-  <script src="js/main.min.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 
 </html>

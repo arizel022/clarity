@@ -17,79 +17,43 @@
   @@include('../lego/header.html')
   <main class="page">
 
+    <h1 class="sr-only">Clarity - юридические услуги в Украине</h1>
 
-    <section class="banner">
+    @@include('../lego/hero.html')
 
-      <div class="banner__wrapper"></div>
-      <div class="container">
-        <div class="slider__wrapper">
-
-          <div class="slider">
-
-            <div class="slider__item" style="background-image: url(images/banner1.jpg);">
-              <div class="slider__text">
-                <div class="slider__description">
-                  Юридический консалтинг
-                </div>
-                <div class="slider__title">
-                  Юридические услуги <br> для юридических лиц <br>и нерезидентов
-                </div>
-              </div>
-            </div>
-            <div class="slider__item" style="background-image: url(images/banner2.jpg);">
-              <div class="slider__text">
-                <div class="slider__description">
-                  Получение лицензий
-                </div>
-                <div class="slider__title">
-                  Лицензия для любого<br> вида деятельности
-                </div>
-              </div>
-            </div>
-            <div class="slider__item" style="background-image: url(images/banner3.jpg);">
-              <div class="slider__text">
-                <div class="slider__description">
-                  От 18 000 грн
-                </div>
-                <div class="slider__title">
-                  Покупка готовых<br> компаний и открытие<br>представительств в Украине
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </section>
     <section class="article">
-      <div class="container">
-        <div class="article__inner">
-          <div class="article__title">
+      <div class="container article__container">
+
+        <div class="article__group">
+          <h2 class="article__title">
             Мы работаем на рынке юридических услуг Украины с 2006 года.
-          </div>
-          <div class="article__text">
+          </h2>
+          <p class="article__text">
             Работая в Киеве, мы отчетливо представляем уровень конкуренции в нашей сфере. Поэтому отдаем себе
             отчет в том, насколько качественными и эффективными
             должны быть наши услуги. Мы ориентируемся только на долгосрочную эффективность.
-          </div>
-          <div class="article__text">
+          </p>
+          <p class="article__text">
             Каждый клиент компании CLARITY обслуживается как единственный, а каждая услуга предоставляется с
             самым высоким уровнем качества.
-
-          </div>
-          <div class="article__title">
+          </p>
+        </div>
+        <div class="article__group">
+          <h3 class="article__title">
             Мы предлагаем:
-          </div>
+          </h3>
           <ul class="article__list">
             <li class="article__item">юридические консультации</li>
             <li class="article__item">помощь в получении медицинских и других лицензий</li>
             <li class="article__item">регистрации благотворительных фондов, общественных организаций в Киеве,
               ООО и т.д. </li>
           </ul>
-          <div class="article__title">
+
+        </div>
+        <div class="article__group">
+          <h3 class="article__title">
             Самые популярные юридические услуги нашей компании это:
-          </div>
+          </h3>
           <ul class="article__list">
             <li class="article__item">вывод на украинский рынок иностранных компаний (регистрация ООО,
               регистрация представительства иностранной компании в Украине,
@@ -99,281 +63,186 @@
             <li class="article__item">регистрация печатного издания, регистрация информационного агентства,
               внесение изменений в устав благотворительного фонда</li>
           </ul>
-          <div class="article__title">
+        </div>
+        <div class="article__group">
+          <h3 class="article__title">
             Юридические услуги в сфере лицензирования:
-          </div>
+          </h3>
           <ul class="article__list">
             <li class="article__item">медицинская лицензия</li>
             <li class="article__item">лицензия на аптеку</li>
             <li class="article__item">лицензия на охрану и др.</li>
           </ul>
-          <div class="article__text">
+          <p class="article__text">
             Если ждать оформления лицензии слишком долго, Вы можете приобрести у нас готовую фирму с лицензией,
             благотворительный фонд или общественную организацию.
-
-          </div>
+          </p>
         </div>
+
       </div>
     </section>
-    <section class="service">
-      <div class="container">
-        <div class="service__inner">
-          <div class="service__column">
 
-            <div class="service__item service__item--1 service__item--0img">
-              <div class="service__icon icon-shield"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  юридическая консультация
-                </div>
-                <div class="service__text">
+    <section class="service">
+      <h2 class="sr-only">Услуги юридической компании Clarity</h2>
+      <div class="container">
+        <ul class="service__grid">
+          <li class="service__item service__item--6">
+            <article class="service-card">
+              <div class="service-card__inner">
+                <span class="service-card__icon"></span>
+                <h3 class="service-card__title">юридическая консультация</h3>
+
+                <p class="service-card__text">
                   Юридическая консультация - это основанный на специфических знаниях и опыте вывод юриста
                   по тому или иному юридическому вопросу или ряду вопросов.
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-            <div class="service__item service__item--2 service__item--1img">
+                </p>
 
-              <div class="service__flex">
-                <div class="service__img" style="background-image: url(images/service/ur.jpg);">
-                  <div class="service__icon icon-hammer2"></div>
-                </div>
-                <div class="service__title">
-                  юридическим лицам
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
+                <a class="service-card__link" href="#">Подробно</a>
               </div>
-            </div>
-            <div class="service__item service__item--3 service__item--0img">
-              <div class="service__icon icon-shield"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  Услуги нерезидентам
-                </div>
-                <div class="service__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice
-                  is the have greaetur adipisicin, sed does eiue have great work.
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card">
+
+              <img src="./images/service/license.jpg" alt="" class="service-card__img" height="240px">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">получить лицензию</h3>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--6">
+            <article class="service-card">
+              <div class="service-card__inner">
+                <span class="service-card__icon"></span>
+                <h3 class="service-card__title">регистрация фирмы</h3>
+                <p class="service-card__text">
+                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have
+                  greaetur adipisicin.
+                </p>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card service-card--dark">
+              <img src="./images/service/fiz.jpg" alt="" class="service-card__img" height="240px">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">физическим лицам</h3>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card">
+
+              <img src="./images/service/ur.jpg" alt="" class="service-card__img" height="240px">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">юридическим лицам</h3>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7 ">
+
+            <article class="service-card">
+
+              <img src="./images/service/kupfirm.jpg" alt="" class="service-card__img" height="240px">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">купить фирму</h3>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--6">
+            <article class="service-card service-card--dark">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">Остались вопросы?</h3>
+                <a class="service-card__link" href="#">Напишите нам</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card">
+              <div class="service-card__inner">
+                <span class="service-card__icon"></span>
+                <h3 class="service-card__title">Юридические практики</h3>
+                <p class="service-card__text">
+                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have
+                  greaetur adipisicin, sed does eiue have great work pisicin, вакевп вап?sdfgd raet4sdfsadfsd sd. Lorem
+                  ipsum doloirs t,tetur acin.
+                </p>
+                <a class="service-card__link" href="#">Подробно</a>
+              </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card">
+              <div class="service-card__inner">
+                <span class="service-card__icon"></span>
+                <h3 class="service-card__title">Услуги нерезидентам</h3>
+                <p class="service-card__text">
+                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is the have tur adipisicin, sed does tur adipisicin, sed does tur adipisicin, sed does
+                  greaetur adipisicin, sed does eiue have great work.
                   orem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehamp
-
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
+                </p>
+                <a class="service-card__link" href="#">Подробно</a>
               </div>
-            </div>
+            </article>
+          </li>
+          <li class="service__item service__item--7">
+            <article class="service-card">
 
-          </div>
-
-          <div class="service__column">
-            <div class="service__item service__item--4 service__item--1img">
-
-
-              <div class="service__flex">
-                <div class="service__img" style="background-image: url(images/service/license.jpg);">
-                  <div class="service__icon icon-hammer2"></div>
-                </div>
-                <div class="service__title">
-                  получить лицензию
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
+              <img src="./images/service/sopr.jpg" alt="" class="service-card__img" height="240px">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">Сопровождение иностранного бизнеса</h3>
+                <a class="service-card__link" href="#">Подробно</a>
               </div>
-            </div>
-            <div class="service__item service__item--5 service__item--0img service__item--dark">
-
-              <div class="service__icon icon-briefcase"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  Остались вопросы?
-                </div>
-                <a class="service__btn" href="#">Напишите нам</a>
+            </article>
+          </li>
+          <li class="service__item service__item--2">
+            <article class="service-card service-card--dark">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">Наши партнеры</h3>
+                <a class="service-card__partner-link" href="#">benedict.com</a>
               </div>
+            </article>
+          </li>
+          <li class="service__item service__item--6">
+            <article class="service-card">
+              <div class="service-card__inner">
+                <span class="service-card__icon"></span>
+                <h3 class="service-card__title">регистрация неприбыльных организаций</h3>
 
-            </div>
-            <div class="service__item service__item--6 service__item--1img">
+                <p class="service-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, dolorem. Incidunt ex quae, distinctio hic, voentium aut? Impedit quas repellat sapiente possimus.
+                </p>
 
-
-              <div class="service__flex">
-                <div class="service__img" style="background-image: url(images/service/sopr.jpg);">
-                  <div class="service__icon icon-shield"></div>
-                </div>
-                <div class="service__title">
-                  Сопровождение иностранного бизнеса
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
+                <a class="service-card__link" href="#">Подробно</a>
               </div>
-            </div>
-          </div>
-
-          <div class="service__column">
-            <div class="service__item service__item--7 service__item--0img">
-
-              <div class="service__icon icon-shield"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  регистрация фирмы
-                </div>
-                <div class="service__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is
-                  the have greaetur adipisicin.
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
+            </article>
+          </li>
+          <li class="service__item service__item--5">
+            <article class="service-card service-card--dark">
+              <div class="service-card__inner">
+                <span class="service-card__icon service-card__icon--ham"></span>
+                <h3 class="service-card__title">полезная информация</h3>
+                <a class="service-card__link" href="#">Подробно</a>
               </div>
-            </div>
-            <div class="service__item service__item--8  service__item--1img">
-
-
-              <div class="service__flex">
-                <div class="service__img" style="background-image: url(images/service/kupfirm.jpg);">
-                  <div class="service__icon icon-hammer2"></div>
-                </div>
-                <div class="service__title">
-                  купить<br> фирму
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-            <div class="service__item service__item--9 service__item--0img service__item--dark">
-
-              <div class="service__icon icon-briefcase"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  Наши партнеры
-                </div>
-                <a class="service__link" href="#">www.benedict.com</a>
-              </div>
-            </div>
-            <div class="service__item service__item--10 service__item--0img service__item--dark">
-
-              <div class="service__icon icon-briefcase"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  полезная информация
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="service__column">
-            <div class="service__item service__item--11 service__item--1img">
-
-
-              <div class="service__flex">
-                <div class="service__img" style="background-image: url(images/service/fiz.jpg);">
-                  <div class="service__icon icon-hammer2"></div>
-                </div>
-                <div class="service__title">
-                  физическим лицам
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-            <div class="service__item service__item--12 service__item--0img">
-
-              <div class="service__icon icon-briefcase"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  Юридические практики
-                </div>
-                <div class="service__text">
-                  Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor choice is
-                  the have greaetur adipisicin, sed does eiue have great work pisicin, вакевп вап?sdfgd
-                  raet4sdfsadfsd sd. Lorem ipsum doloirs t,tetur acin.
-                </div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-            <div class="service__item service__item--13 service__item--0img">
-
-              <div class="service__icon icon-shield"></div>
-              <div class="service__flex">
-                <div class="service__title">
-                  регистрация неприбыльных организаций
-                </div>
-                <div class="service__img--13" style="background-image: url(images/service/mon.png);"></div>
-                <a class="service__btn" href="#">Подробно</a>
-              </div>
-            </div>
-          </div>
-
-        </div>
+            </article>
+          </li>
+        </ul>
       </div>
     </section>
   </main>
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__inner">
-
-        <div class="footer__item footer__item--1">
-          <a class="footer__logo logo" href="mail.html"></a>
-          <span class="icon-location2 footer__adres--icon"></span>
-          <div class="footer__adres">Киев, ул. Сечевых Стрельцов, 77, оф. 512. Пн-Пт с 09:00 до 19:00.
-          </div>
-          <div class="footer__map">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.1607938847883!2d30.48630601529772!3d50.456730394794064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce634667090b%3A0x674623385ad1756a!2z0YPQuy4g0KHQtdGH0LXQstGL0YUg0KHRgtGA0LXQu9GM0YbQvtCyLCA3Nywg0JrQuNC10LIsINCj0LrRgNCw0LjQvdCwLCAwMjAwMA!5e0!3m2!1sru!2spl!4v1607964930543!5m2!1sru!2spl"
-              width="359" height="170" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
-              tabindex="0"></iframe>
-          </div>
-        </div>
-
-        <div class="footer__item footer__item--2">
-          <div class="footer__title">
-            Быстрые ссылки
-          </div>
-          <div class="footer__list-wrapper">
-            <ul class="footer__list">
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Медицинское право</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Семейное право</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Наследственное право</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Договорная практика</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Земельное право</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Юридическое обслуживание</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Судебная практика</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Корпоративное право</a></li>
-            </ul>
-            <ul class="footer__list">
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Сопровождение госпроверок</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Налоговое право</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Юридические услуги по недвижимости</a>
-              </li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Юридическое сопровождение общественных
-                  объединений</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Юридическое обслуживание неприбильных
-                  организаций</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Право интеллектуальной
-                  собственности</a></li>
-              <li class="footer__list-item"><a href="#" class="footer__list-link">Юридическое обслуживание иностранного
-                  <br>представительства</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="footer__item footer__item--3">
-          <div class="footer__title">
-            Быстро связаться
-          </div>
-          <div class="footer__social social">
-            <div class="social__item global__icon icon-gmail"></div>
-            <div class="social__item global__icon icon-telegram"></div>
-            <div class="social__item global__icon icon-viber"></div>
-            <div class="social__item global__icon icon-facebook"></div>
-            <div class="social__item global__icon icon-skype"></div>
-          </div>
-          <a href="#" class="footer__phone icon-phone"><span>+38 044 555 55 55</span></a>
-          <a href="#" class="footer__phone icon-phone"><span>+38 067 666 66 66</span></a>
-          <hr class="footer__line">
-        </div>
-
-      </div>
-
-    </div>
-    <div class="footer__bottom">
-      ©2021 copyright .all right reserved by
-      <a class="footer__bottom--link" href="#">wildweb</a>
-      <a class="footer__bottom--link" href="#">terms policy</a>
-      <a class="footer__bottom--link" href="#">disclaimer</a>
-    </div>
-  </footer>
+  @@include('../lego/footer.html')
 
   <script src="js/main.min.js"></script>
 </body>

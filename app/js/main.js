@@ -1,13 +1,15 @@
 $(document).ready(function () {
-  
+
+
+
   $('.menu__list').hide();
 
-  $('.slider').slick({
+  $('.hero__inner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
-    prevArrow: '<div class="sl__arrow sl__arrow--prev icon-long-arrow-up"></div>',
-    nextArrow: '<div class="sl__arrow sl__arrow--next icon-long-arrow-down"></div>',
-    autoplay: true,
+    prevArrow: '<button class="sl__btn sl__btn--prev" type="button"><svg class="sl__icon" width="25" height="25"><use xlink:href="images/sprite.svg#icon-arrow-long-up"></use></svg></button>',
+    nextArrow: '<button class="sl__btn sl__btn--next" type="button"><svg class="sl__icon" width="25" height="25"><use xlink:href="images/sprite.svg#icon-arrow-long-down"></use></svg></button>',
+    // autoplay: true,
     autoplaySpeed: 1500,
     vertical: true,
     verticalSwiping: true,
@@ -16,49 +18,49 @@ $(document).ready(function () {
     infiniti: true
   });
 
-  
+
   $('.menu__button').on('click', function () {
     $(this).toggleClass('active');
     $('.menu__list').slideToggle();
   });
 
-  $("#rateYo").rateYo({
-    starWidth: "30px",
-    normalFill: "#575757",
-    ratedFill: "#304a9d"
+
+  // вызов подменю при клике на спан-ссылку. При повторном нажатии подменю скрывается. При клике вне подменю, оно тоже скрывается
+  const menuBtn = $(".menu__link--arrow"),
+    menu = $(".menu__sublist");
+  menuBtn.on("click", function () {
+    if ($(this).hasClass("active")) {
+      $(this).removeClass("active");
+    } else {
+      $(this).addClass("active");
+    }
+  });
+  $(document).click(function (e) {
+    if (!menuBtn.is(e.target) && !menu.is(e.target) && menu.has(e.target).length === 0) {
+      menuBtn.removeClass("active");
+    };
   });
 
-  
 
-
-
-    $('.paper__wrapper').slick({
+  $('.servicepack__inner').slick({
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
-    prevArrow: '<div class="icon-long-arrow-left slick-prew serv-arrow serv-arrow-prew"></div>',
-    nextArrow: '<div class="icon-long-arrow-right slick-next serv-arrow serv-arrow-next"></div>',
-    dots: false,
-    infiniti: true
+    prevArrow: '<button class="servicepack__btn servicepack__btn--prev" type="button"><svg class="servicepack__icon" width="25" height="25"><use xlink:href="images/sprite.svg#icon-arrow-long-down"></use></svg>предыдущая услуга</button>',
+    nextArrow: '<button class="servicepack__btn servicepack__btn--next" type="button">следующая услуга<svg class="servicepack__icon" width="25" height="25"><use xlink:href="images/sprite.svg#icon-arrow-long-up"></use></svg></button>',
+    infiniti: true,
+    dots: false
+
   });
 
-//E-mail Ajax Send
-  $(".form").submit(function() { //Change
-    $.ajax({
-      type: "POST",
-      url: "mail.php", //Change
-      data: th.serialize()
-    }).done(function() {
-      alert("Thank you!");
-      setTimeout(function() {
-// Done Functions
-        th.trigger("reset");
-      }, 1000);
-    });
-    return false;
-  });
-  var th = $(this);
+
+  window.onscroll = function () {
+    if (window.scrollY >= 732) {
+      $('.servicepack__btn').addClass('fixed')
+    } else {
+      $('.servicepack__btn').removeClass('fixed')
+    }
+  }
 
 
 });
-

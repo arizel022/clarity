@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Open+Sans&family=Play&display=swap"
+        rel="stylesheet">
+    <title>Clarity - шаблон бизнес-сайта</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    @@include('../lego/header.html')
+    <main class="page">
+        <div class="page-wrapper">
+            <div class="container page-wrapper__container">
+                <section class="contact-page">
+
+                    <address class="contact-page__address">
+
+                        <div class="contact-page__map"></div>
+
+                        <div class="contact-page__inner">
+                            <h1 class="contact-page__title">Контактная информация</h1>
+                            <p class="contact-page__text">
+                                Остались вопросы? Напишите или позвоните нам, и мы обязательно ответим.
+                            </p>
+                            <ul class="contact-page__list">
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="tel:+380445555555">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 044 555 55 55
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="tel:+380676666666">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        +38 067 666 66 66
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        г. Киев, ул. Сечевых стрельцов, д. 15, оф. 214. Пн-Пт с 9:00 до 18:00.
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="mailto:info@clarity.com">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        info@clarity.com
+                                    </a>
+                                </li>
+                                <li class="contact-page__item">
+                                    <a class="contact-page__link" href="clarity.com">
+                                        <svg class="contact-page__icon" width="15" height="15">
+                                            <use xlink:href="images/sprite.svg#icon-phone"></use>
+                                        </svg>
+                                        clarity.com
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </address>
+
+                    <form class="form" action="">
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваше имя</span>
+                            <input class="form__input" type="text" name="name" placeholder="Тарас" required>
+                        </label>
+                        <label class="form__label">
+                            <span class="sr-only">Ваша почта</span>
+                            <input class="form__input" type="email" name="email" placeholder="you@email.com" required>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваш вебсайт</span>
+                            <input class="form__input" type="text" name="site" placeholder="you.com" required>
+                        </label>
+
+                        <label class="form__label">
+                            <span class="sr-only">Ваше сообщение</span>
+                            <textarea class="form__input form__input--area" name="message" placeholder="Введите текст сообщения тут..."
+                                required></textarea>
+                        </label>
+
+                        <button class="form__btn" type="submit">Отправить сообщение</button>
+                    </form>
+
+                </section>
+                <aside class="sidebar sidebar--small">
+
+                    <div class="sidebar__statistic">
+                        <h2 class="sidebar__title">
+                            Статистика
+                        </h2>
+                        <ul class="sidebar__list sidebar__list--small-pict">
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">получить лицензию</p>
+                                <span class="sidebar__count">24</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">зарегистрировать фирму</p>
+                                <span class="sidebar__count">5</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">купить фирму</p>
+                                <span class="sidebar__count">4</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">услуги нерезидентам</p>
+                                <span class="sidebar__count">65</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">неприбыльные организации</p>
+                                <span class="sidebar__count">5</span>
+                            </li>
+                            <li class="sidebar__item">
+                                <p class="sidebar__text">разрешение на строительство</p>
+                                <span class="sidebar__count">13</span>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+            </div>
+        </div>
+
+
+
+
+
+
+    </main>
+    @@include('../lego/footer.html')
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

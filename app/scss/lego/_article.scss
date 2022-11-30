@@ -1,0 +1,47 @@
+.article {
+    background-color: #fff;
+    font-family: "OpenSans", sans-serif;
+
+    &__container {
+        padding: 50px 50px 50px 65px;
+    }
+
+    &__group {
+        margin-bottom: 40px;
+    }
+
+    &__title {
+        font-size: 18px;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+    }
+
+    &__list:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &__text:not(:last-child) {
+        margin-bottom: 15px;
+    }
+
+    &__item  {
+        display: flex;
+        align-items: center;
+
+        &:not(:last-child) {
+            margin-bottom: 15px;
+        }
+
+        &:before {
+            content: '';
+            display: block;
+            width: 15px;
+            height: 15px;
+            background-repeat: no-repeat;
+            background-image: url('../images/icon/spinner9.svg');
+            background-position: center;
+            background-size: cover;
+            margin-right: 15px;
+        }
+    }
+}
